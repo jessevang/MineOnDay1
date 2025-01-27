@@ -1,0 +1,11 @@
+{
+  "Name": "MineOnDay1",
+  "Author": "Darkmushu",
+  "Version": "1.0.0",
+  "Description": "Mine On Day 1",
+  "UniqueID": "Darkmushu.MineOnDay1",
+  "EntryDll": "MineOnDay1.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:31238" ]
+
+}
