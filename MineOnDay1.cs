@@ -35,16 +35,17 @@ namespace MineOnDay1
             helper.Events.GameLoop.DayStarted += onStartOfDay;
             helper.Events.GameLoop.DayEnding += onEndOfDay;
 
+           
+            if (!helper.ModRegistry.IsLoaded("Pathoschild.ContentPatcher"))
+            {
+                Monitor.Log("Content Patcher is not installed. Skipping patches.", LogLevel.Warn);
+            }
+           
+            
+            
             if (Instance.Config.TurnOnCommunityCenterOnDay1)
             {
-                if (!helper.ModRegistry.IsLoaded("Pathoschild.ContentPatcher"))
-                {
-                    Monitor.Log("Content Patcher is not installed. Skipping patches.", LogLevel.Warn);
-                }
-                else
-                {
-                    RegisterContentPatcherPack();
-                }
+                RegisterContentPatcherPack();
 
 
             }
@@ -70,7 +71,7 @@ namespace MineOnDay1
                 name: "MineOnDay1",
                 description: "Temporary Content Patcher pack for MineOnDay1",
                 author: "Darkmushu",
-                version: new SemanticVersion(1, 0, 0) // SMAPI's version format
+                version: new SemanticVersion(1, 0, 1) // SMAPI's version format
             );
 
             if (contentPack != null)
@@ -88,7 +89,7 @@ namespace MineOnDay1
         //Code to change day 1,2,3,4 to day 5 to open up the mines.
         private void onStartOfDay(object sender, EventArgs e)
         {
-            if (!Instance.Config.TurnOnMiningOnDay1)
+            if (Instance.Config.TurnOnMiningOnDay1)
             {
                 this.realCurrentDay = (uint)Game1.stats.DaysPlayed;
                 // Check the number of days played
@@ -105,7 +106,7 @@ namespace MineOnDay1
         //resets the day back to the original current day at the end of the day so calendar
         private void onEndOfDay(object sender, EventArgs e)
         {
-            if (!Instance.Config.TurnOnMiningOnDay1)
+            if (Instance.Config.TurnOnMiningOnDay1)
             {
                 Game1.stats.DaysPlayed = this.realCurrentDay;
             }
