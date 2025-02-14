@@ -6,6 +6,8 @@
   "UniqueID": "Darkmushu.MineOnDay1",
   "EntryDll": "MineOnDay1.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": [ "Nexus:31238" ]
+  "UpdateKeys": [ "Nexus:31238" ],
+
 
 }
+
