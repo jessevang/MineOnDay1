@@ -1,0 +1,6 @@
+﻿{
+  "config.mining-on-day1.name": "1일차에 광산 접근 활성화",
+  "config.mining-on-day1.tooltip": "활성화하면 1년차 봄 1일에 광산 입구를 막고 있는 산사태가 제거됩니다.",
+  "config.cc-on-day1.name": "1일차에 커뮤니티 센터 활성화",
+  "config.cc-on-day1.tooltip": "활성화하면 1년차 봄 1일에 커뮤니티 센터 컷신이 실행됩니다 (펠리칸 타운 진입 필요)."
+}

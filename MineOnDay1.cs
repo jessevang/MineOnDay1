@@ -1,5 +1,7 @@
 ﻿
+using GenericModConfigMenu;
 using StardewModdingAPI;
+using StardewModdingAPI.Events;
 using StardewValley;
 
 
@@ -34,8 +36,8 @@ namespace MineOnDay1
 
             helper.Events.GameLoop.DayStarted += onStartOfDay;
             helper.Events.GameLoop.DayEnding += onEndOfDay;
+            helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
 
-           
             if (!helper.ModRegistry.IsLoaded("Pathoschild.ContentPatcher"))
             {
                 Monitor.Log("Content Patcher is not installed. Skipping patches.", LogLevel.Warn);
@@ -114,6 +116,47 @@ namespace MineOnDay1
 
         }
 
+
+        private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
+        {
+            // 3. Get the GMCM API
+            var configMenu = this.Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
+
+            if (configMenu is null)
+            {
+                this.Monitor.Log("Generic Mod Config Menu (GMCM) API not found. Configuration menu will not be available.", LogLevel.Warn);
+                return; // GMCM isn't installed, so we can't do anything
+            }
+
+            // 4. Register your mod with GMCM
+            configMenu.Register(
+                mod: this.ModManifest,
+                reset: () => this.Config = new Config(), // Action to reset config to defaults
+                save: () => this.Helper.WriteConfig(this.Config) // Action to save current config
+            );
+
+            // 5. Add options to the GMCM menu using i18n keys
+
+            // --- Mining on Day 1 Option ---
+            configMenu.AddBoolOption(
+                mod: this.ModManifest,
+                name: () => this.Helper.Translation.Get("config.mining-on-day1.name"), // Get translated name
+                tooltip: () => this.Helper.Translation.Get("config.mining-on-day1.tooltip"), // Get translated tooltip
+                getValue: () => this.Config.TurnOnMiningOnDay1, // How to get the current value
+                setValue: value => this.Config.TurnOnMiningOnDay1 = value // How to set the value
+            );
+
+            // --- Community Center on Day 1 Option ---
+            configMenu.AddBoolOption(
+                mod: this.ModManifest,
+                name: () => this.Helper.Translation.Get("config.cc-on-day1.name"), // Get translated name
+                tooltip: () => this.Helper.Translation.Get("config.cc-on-day1.tooltip"), // Get translated tooltip
+                getValue: () => this.Config.TurnOnCommunityCenterOnDay1, // How to get the current value
+                setValue: value => this.Config.TurnOnCommunityCenterOnDay1 = value // How to set the value
+            );
+
+        
+        }
 
 
 

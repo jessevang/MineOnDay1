@@ -1,0 +1,6 @@
+﻿{
+  "config.mining-on-day1.name": "Habilitar Acceso a la Mina el Día 1",
+  "config.mining-on-day1.tooltip": "Si está habilitado, el derrumbe que bloquea la entrada de la mina se despejará el día 1 de Primavera, Año 1.",
+  "config.cc-on-day1.name": "Habilitar Centro Cívico el Día 1",
+  "config.cc-on-day1.tooltip": "Si está habilitado, la escena del Centro Cívico se activará el día 1 de Primavera, Año 1 (requiere entrar en Pueblo Pelícano)."
+}

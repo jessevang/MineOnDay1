@@ -1,12 +1,17 @@
 {
   "Name": "MineOnDay1",
   "Author": "Darkmushu",
-  "Version": "1.0.1",
+  "Version": "1.0.2",
   "Description": "Mine On Day 1 + Community Center Event available on Day 1",
   "UniqueID": "Darkmushu.MineOnDay1",
   "EntryDll": "MineOnDay1.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": [ "Nexus:31238" ]
-
+  "UpdateKeys": [ "Nexus:31238" ],
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": false
+    }
+  ]
 }
 

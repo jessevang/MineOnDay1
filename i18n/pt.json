@@ -1,0 +1,6 @@
+﻿{
+  "config.mining-on-day1.name": "Habilitar Acesso à Mina no Dia 1",
+  "config.mining-on-day1.tooltip": "Se habilitado, o deslizamento que bloqueia a entrada da mina será removido no Dia 1 da Primavera, Ano 1.",
+  "config.cc-on-day1.name": "Habilitar Centro Comunitário no Dia 1",
+  "config.cc-on-day1.tooltip": "Se habilitado, a cena do Centro Comunitário será acionada no Dia 1 da Primavera, Ano 1 (requer entrar na Vila Pelicanos)."
+}

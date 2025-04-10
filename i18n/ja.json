@@ -1,0 +1,6 @@
+﻿{
+  "config.mining-on-day1.name": "1日目に鉱山アクセスを有効にする",
+  "config.mining-on-day1.tooltip": "有効にすると、1年目の春の1日目に鉱山の入り口を塞いでいる土砂崩れが除去されます。",
+  "config.cc-on-day1.name": "1日目に公民館を有効にする",
+  "config.cc-on-day1.tooltip": "有効にすると、1年目の春の1日目に公民館のカットシーンがトリガーされます（ペリカンタウンに入る必要があります）。"
+}

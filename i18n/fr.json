@@ -1,0 +1,6 @@
+﻿{
+  "config.mining-on-day1.name": "Activer l'accès à la mine le jour 1",
+  "config.mining-on-day1.tooltip": "Si activé, l'éboulement bloquant l'entrée de la mine sera dégagé le 1er jour du Printemps, Année 1.",
+  "config.cc-on-day1.name": "Activer le Centre Communautaire le jour 1",
+  "config.cc-on-day1.tooltip": "Si activé, la cinématique du Centre Communautaire se déclenchera le 1er jour du Printemps, Année 1 (nécessite d'entrer à Pélican Ville)."
+}

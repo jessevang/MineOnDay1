@@ -1,0 +1,6 @@
+﻿{
+  "config.mining-on-day1.name": "在第1天启用矿井入口",
+  "config.mining-on-day1.tooltip": "如果启用，阻挡矿井入口的山体滑坡将在第1年春季第1天被清除。",
+  "config.cc-on-day1.name": "在第1天启用社区中心",
+  "config.cc-on-day1.tooltip": "如果启用，社区中心过场动画将在第1年春季第1天触发（需要进入鹈鹕镇）。"
+}
