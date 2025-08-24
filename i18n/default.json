@@ -1,6 +1,11 @@
 ﻿{
+
+  "config.fishOnDay1.name": "Fish On Day 1",
+  "config.fishOnDay1.tooltip": "Turn on to Trigger mail and Willy's event that gives you a fishing rod at beach'",
   "config.mining-on-day1.name": "Enable Mine Access on Day 1",
   "config.mining-on-day1.tooltip": "If enabled, the landslide blocking the mine entrance will be cleared on Spring 1, Year 1.",
   "config.cc-on-day1.name": "Enable Community Center on Day 1",
   "config.cc-on-day1.tooltip": "If enabled, the Community Center cutscene will trigger on Spring 1, Year 1 (requires entering Pelican Town)."
+
+
 }

@@ -1,8 +1,8 @@
 {
   "Name": "MineOnDay1",
   "Author": "Darkmushu",
-  "Version": "1.0.2",
-  "Description": "Mine On Day 1 + Community Center Event available on Day 1",
+  "Version": "1.0.3",
+  "Description": "Mine On Day 1, Community Center Event available on Day 1, Willy for fish rod Event on Day 1",
   "UniqueID": "Darkmushu.MineOnDay1",
   "EntryDll": "MineOnDay1.dll",
   "MinimumApiVersion": "4.0.0",

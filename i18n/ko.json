@@ -1,4 +1,7 @@
 ﻿{
+  "config.fishOnDay1.name": "첫째 날 낚시",
+  "config.fishOnDay1.tooltip": "켜면 편지와 윌리의 이벤트가 발생하여 해변에서 낚싯대를 받습니다",
+
   "config.mining-on-day1.name": "1일차에 광산 접근 활성화",
   "config.mining-on-day1.tooltip": "활성화하면 1년차 봄 1일에 광산 입구를 막고 있는 산사태가 제거됩니다.",
   "config.cc-on-day1.name": "1일차에 커뮤니티 센터 활성화",

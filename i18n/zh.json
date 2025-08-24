@@ -1,4 +1,7 @@
 ﻿{
+  "config.fishOnDay1.name": "第一天钓鱼",
+  "config.fishOnDay1.tooltip": "开启后将触发邮件和威利的事件，他会在海滩上送你一根钓竿",
+
   "config.mining-on-day1.name": "在第1天启用矿井入口",
   "config.mining-on-day1.tooltip": "如果启用，阻挡矿井入口的山体滑坡将在第1年春季第1天被清除。",
   "config.cc-on-day1.name": "在第1天启用社区中心",

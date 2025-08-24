@@ -1,4 +1,7 @@
 ﻿{
+  "config.fishOnDay1.name": "Pescar en el Día 1",
+  "config.fishOnDay1.tooltip": "Actívalo para recibir la carta y el evento de Willy que te da una caña de pescar en la playa",
+
   "config.mining-on-day1.name": "Habilitar Acceso a la Mina el Día 1",
   "config.mining-on-day1.tooltip": "Si está habilitado, el derrumbe que bloquea la entrada de la mina se despejará el día 1 de Primavera, Año 1.",
   "config.cc-on-day1.name": "Habilitar Centro Cívico el Día 1",

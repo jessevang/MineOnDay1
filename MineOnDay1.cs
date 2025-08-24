@@ -2,6 +2,7 @@
 using GenericModConfigMenu;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
+using StardewModdingAPI.Utilities;
 using StardewValley;
 
 
@@ -14,6 +15,8 @@ namespace MineOnDay1
     {
         public bool TurnOnMiningOnDay1 { get; set; } = true;
         public bool TurnOnCommunityCenterOnDay1 { get; set; } = true;
+
+        public bool TurnOnFishOnDay1 { get; set; } = true;
 
 
     }
@@ -91,18 +94,46 @@ namespace MineOnDay1
         //Code to change day 1,2,3,4 to day 5 to open up the mines.
         private void onStartOfDay(object sender, EventArgs e)
         {
+
+            if (Config.TurnOnFishOnDay1)
+            {
+                this.realCurrentDay = (uint)Game1.stats.DaysPlayed;
+                if (Game1.dayOfMonth == 1 && Game1.currentSeason.Equals("spring", StringComparison.OrdinalIgnoreCase) && realCurrentDay == 1)
+                {
+                    // Try to find & deliver Willy’s invite letter for *this* install/modpack
+                    string? invite = WillyMailHelper.FindWillyInviteKey(Monitor);
+
+                    if (invite != null && !Game1.player.hasOrWillReceiveMail(invite))
+                    {
+                        // Clear any bad leftovers
+                        Game1.player.mailbox.Remove("willyLetter");
+                        Game1.player.mailbox.Remove("willy1");
+                        Game1.player.mailbox.Remove("willyIntro"); // flag, not a letter
+
+                        Game1.player.mailbox.Add(invite);
+                        Monitor.Log($"Queued Willy letter '{invite}' for today.", LogLevel.Info);
+                    }
+                }
+            }
+            
+
             if (Instance.Config.TurnOnMiningOnDay1)
             {
+   
                 this.realCurrentDay = (uint)Game1.stats.DaysPlayed;
                 // Check the number of days played
                 if (Game1.stats.DaysPlayed <= 5)
                 {
+
                     Game1.stats.DaysPlayed = 5; // Set the days played to 5
                 }
             }
 
 
 
+
+
+            
         }
 
         //resets the day back to the original current day at the end of the day so calendar
@@ -155,7 +186,15 @@ namespace MineOnDay1
                 setValue: value => this.Config.TurnOnCommunityCenterOnDay1 = value // How to set the value
             );
 
-        
+            // --- Mining on Day 1 Option ---
+            configMenu.AddBoolOption(
+                mod: this.ModManifest,
+                name: () => this.Helper.Translation.Get("config.fishOnDay1.name"), // Get translated name
+                tooltip: () => this.Helper.Translation.Get("config.fishOnDay1.tooltip"), // Get translated tooltip
+                getValue: () => this.Config.TurnOnFishOnDay1, // How to get the current value
+                setValue: value => this.Config.TurnOnFishOnDay1 = value // How to set the value
+            );
+
         }
 
 

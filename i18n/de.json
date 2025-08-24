@@ -1,4 +1,7 @@
 ﻿{
+  "config.fishOnDay1.name": "Angeln am 1. Tag",
+  "config.fishOnDay1.tooltip": "Aktivieren, um den Brief und Willys Ereignis auszulösen, das dir am Strand eine Angelrute gibt",
+
   "config.mining-on-day1.name": "Minenzugang am Tag 1 aktivieren",
   "config.mining-on-day1.tooltip": "Wenn aktiviert, wird der Erdrutsch, der den Mineneingang blockiert, am 1. Frühlingstag, Jahr 1, beseitigt.",
   "config.cc-on-day1.name": "Gemeinschaftszentrum am Tag 1 aktivieren",

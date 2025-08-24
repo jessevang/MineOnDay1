@@ -1,4 +1,7 @@
 ﻿{
+  "config.fishOnDay1.name": "Pêcher le Jour 1",
+  "config.fishOnDay1.tooltip": "Activez pour déclencher la lettre et l’événement de Willy qui vous donne une canne à pêche à la plage",
+
   "config.mining-on-day1.name": "Activer l'accès à la mine le jour 1",
   "config.mining-on-day1.tooltip": "Si activé, l'éboulement bloquant l'entrée de la mine sera dégagé le 1er jour du Printemps, Année 1.",
   "config.cc-on-day1.name": "Activer le Centre Communautaire le jour 1",
