@@ -1,9 +1,10 @@
 ﻿{
-  "config.fishOnDay1.name": "第一天钓鱼",
-  "config.fishOnDay1.tooltip": "开启后将触发邮件和威利的事件，他会在海滩上送你一根钓竿",
-
-  "config.mining-on-day1.name": "在第1天启用矿井入口",
-  "config.mining-on-day1.tooltip": "如果启用，阻挡矿井入口的山体滑坡将在第1年春季第1天被清除。",
-  "config.cc-on-day1.name": "在第1天启用社区中心",
-  "config.cc-on-day1.tooltip": "如果启用，社区中心过场动画将在第1年春季第1天触发（需要进入鹈鹕镇）。"
+  "config.fishOnDay1.name": "第一天即可钓鱼",
+  "config.fishOnDay1.tooltip": "开启后，将触发威利的来信和事件，在海滩获得鱼竿。",
+  "config.mining-on-day1.name": "第一天开启矿洞",
+  "config.mining-on-day1.tooltip": "开启后，堵住矿洞入口的山崩将在第一年的春天1日被清除。",
+  "config.cc-on-day1.name": "第一天开放社区中心",
+  "config.cc-on-day1.tooltip": "开启后，社区中心的剧情将在第一年的春天1日触发（需要进入鹈鹕镇）。",
+  "config.pet-on-day1.name": "第一天获得宠物",
+  "config.pet-on-day1.tooltip": "第一次走出农舍时，无需任何条件即可触发宠物收养剧情。"
 }

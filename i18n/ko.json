@@ -1,9 +1,10 @@
 ﻿{
-  "config.fishOnDay1.name": "첫째 날 낚시",
-  "config.fishOnDay1.tooltip": "켜면 편지와 윌리의 이벤트가 발생하여 해변에서 낚싯대를 받습니다",
-
-  "config.mining-on-day1.name": "1일차에 광산 접근 활성화",
-  "config.mining-on-day1.tooltip": "활성화하면 1년차 봄 1일에 광산 입구를 막고 있는 산사태가 제거됩니다.",
-  "config.cc-on-day1.name": "1일차에 커뮤니티 센터 활성화",
-  "config.cc-on-day1.tooltip": "활성화하면 1년차 봄 1일에 커뮤니티 센터 컷신이 실행됩니다 (펠리칸 타운 진입 필요)."
+  "config.fishOnDay1.name": "첫째 날부터 낚시",
+  "config.fishOnDay1.tooltip": "활성화하면 편지와 윌리의 이벤트가 발생하여 해변에서 낚싯대를 받을 수 있습니다.",
+  "config.mining-on-day1.name": "첫째 날부터 광산 접근 허용",
+  "config.mining-on-day1.tooltip": "활성화하면 광산 입구를 막고 있는 산사태가 첫 해 봄 1일에 제거됩니다.",
+  "config.cc-on-day1.name": "첫째 날부터 커뮤니티 센터 개방",
+  "config.cc-on-day1.tooltip": "활성화하면 첫 해 봄 1일에 커뮤니티 센터 이벤트가 발생합니다 (펠리칸 마을에 들어가야 함).",
+  "config.pet-on-day1.name": "첫째 날에 반려동물 입양",
+  "config.pet-on-day1.tooltip": "농가 집에서 처음 나올 때 반려동물 입양 이벤트가 조건 없이 시작됩니다."
 }

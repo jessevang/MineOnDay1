@@ -18,7 +18,7 @@ public static class WillyMailHelper
                 .OrderBy(k => k)
                 .ToList();
 
-        monitor.Log($"[Probe] Found {results.Count} Willy-like mail keys: {string.Join(", ", results)}", LogLevel.Info);
+        //monitor.Log($"[Probe] Found {results.Count} Willy-like mail keys: {string.Join(", ", results)}", LogLevel.Info);
         return results;
     }
 
@@ -30,7 +30,6 @@ public static class WillyMailHelper
     {
         var mail = Game1.content.Load<Dictionary<string, string>>("Data\\Mail");
 
-        // Gather candidates (by key or by text mentioning beach / fishing)
         var candidates = mail
             .Where(kv =>
                 kv.Key.IndexOf("willy", StringComparison.OrdinalIgnoreCase) >= 0
@@ -39,7 +38,6 @@ public static class WillyMailHelper
                 || kv.Value.IndexOf("fish", StringComparison.OrdinalIgnoreCase) >= 0)
             .ToList();
 
-        // Prefer early-looking keys (willy1 / willyLetter), then anything with “beach”
         string? pick =
             candidates.Select(kv => kv.Key).FirstOrDefault(k => k.Equals("willy1", StringComparison.OrdinalIgnoreCase))
             ?? candidates.Select(kv => kv.Key).FirstOrDefault(k => k.Equals("willyLetter", StringComparison.OrdinalIgnoreCase))
@@ -47,10 +45,10 @@ public static class WillyMailHelper
                          .Select(kv => kv.Key).FirstOrDefault()
             ?? candidates.Select(kv => kv.Key).FirstOrDefault();
 
-        if (pick != null)
-            monitor.Log($"[Probe] Using invite candidate: {pick}", LogLevel.Info);
-        else
-            monitor.Log("[Probe] No suitable Willy invite mail key found.", LogLevel.Warn);
+        //if (pick != null)
+        //    monitor.Log($"[Probe] Using invite candidate: {pick}", LogLevel.Info);
+        //else
+        //    monitor.Log("[Probe] No suitable Willy invite mail key found.", LogLevel.Warn);
 
         return pick;
     }

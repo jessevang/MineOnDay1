@@ -1,9 +1,10 @@
 ﻿{
-  "config.fishOnDay1.name": "1日目に釣り",
-  "config.fishOnDay1.tooltip": "有効にすると、手紙とウィリーのイベントが発生し、ビーチで釣竿がもらえます",
-
-  "config.mining-on-day1.name": "1日目に鉱山アクセスを有効にする",
-  "config.mining-on-day1.tooltip": "有効にすると、1年目の春の1日目に鉱山の入り口を塞いでいる土砂崩れが除去されます。",
-  "config.cc-on-day1.name": "1日目に公民館を有効にする",
-  "config.cc-on-day1.tooltip": "有効にすると、1年目の春の1日目に公民館のカットシーンがトリガーされます（ペリカンタウンに入る必要があります）。"
+  "config.fishOnDay1.name": "1日目から釣り",
+  "config.fishOnDay1.tooltip": "有効にすると、手紙とウィリーのイベントが発生し、ビーチで釣り竿をもらえます。",
+  "config.mining-on-day1.name": "1日目から鉱山に入れる",
+  "config.mining-on-day1.tooltip": "有効にすると、鉱山の入口を塞いでいる地すべりが1年目の春1日に取り除かれます。",
+  "config.cc-on-day1.name": "1日目からコミュニティセンターを解放",
+  "config.cc-on-day1.tooltip": "有効にすると、コミュニティセンターのカットシーンが1年目の春1日に発生します（ペリカンタウンに入る必要があります）。",
+  "config.pet-on-day1.name": "初日にペットをもらう",
+  "config.pet-on-day1.tooltip": "最初に農家の家から出た時に、ペットの養子イベントが条件なしで始まります。"
 }

@@ -5,7 +5,8 @@
   "config.mining-on-day1.name": "Enable Mine Access on Day 1",
   "config.mining-on-day1.tooltip": "If enabled, the landslide blocking the mine entrance will be cleared on Spring 1, Year 1.",
   "config.cc-on-day1.name": "Enable Community Center on Day 1",
-  "config.cc-on-day1.tooltip": "If enabled, the Community Center cutscene will trigger on Spring 1, Year 1 (requires entering Pelican Town)."
-
+  "config.cc-on-day1.tooltip": "If enabled, the Community Center cutscene will trigger on Spring 1, Year 1 (requires entering Pelican Town).",
+  "config.pet-on-day1.name": "Pet adoption on first Day",
+  "config.pet-on-day1.tooltip": "Start the pet adoption cutscene the first time you walk out of the farmhouse, with no other requirements."
 
 }

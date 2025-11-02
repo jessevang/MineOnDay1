@@ -1,9 +1,10 @@
 ﻿{
-  "config.fishOnDay1.name": "Angeln am 1. Tag",
-  "config.fishOnDay1.tooltip": "Aktivieren, um den Brief und Willys Ereignis auszulösen, das dir am Strand eine Angelrute gibt",
-
+  "config.fishOnDay1.name": "Angeln am Tag 1",
+  "config.fishOnDay1.tooltip": "Aktivieren, um den Brief und Willys Ereignis auszulösen, das dir am Strand eine Angelrute gibt.",
   "config.mining-on-day1.name": "Minenzugang am Tag 1 aktivieren",
-  "config.mining-on-day1.tooltip": "Wenn aktiviert, wird der Erdrutsch, der den Mineneingang blockiert, am 1. Frühlingstag, Jahr 1, beseitigt.",
+  "config.mining-on-day1.tooltip": "Wenn aktiviert, wird der Erdrutsch, der den Mineneingang blockiert, am 1. Frühling des 1. Jahres entfernt.",
   "config.cc-on-day1.name": "Gemeinschaftszentrum am Tag 1 aktivieren",
-  "config.cc-on-day1.tooltip": "Wenn aktiviert, wird die Zwischensequenz des Gemeinschaftszentrums am 1. Frühlingstag, Jahr 1, ausgelöst (Betreten von Pelikan Stadt erforderlich)."
+  "config.cc-on-day1.tooltip": "Wenn aktiviert, wird die Gemeinschaftszentrum-Zwischensequenz am 1. Frühling des 1. Jahres ausgelöst (erfordert Betreten von Pelican Town).",
+  "config.pet-on-day1.name": "Haustieradoption am ersten Tag",
+  "config.pet-on-day1.tooltip": "Startet die Haustieradoptionsszene, wenn du das erste Mal aus dem Bauernhaus gehst, ohne weitere Voraussetzungen."
 }

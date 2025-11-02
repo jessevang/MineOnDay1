@@ -1,9 +1,10 @@
 ﻿{
-  "config.fishOnDay1.name": "Pêcher le Jour 1",
-  "config.fishOnDay1.tooltip": "Activez pour déclencher la lettre et l’événement de Willy qui vous donne une canne à pêche à la plage",
-
-  "config.mining-on-day1.name": "Activer l'accès à la mine le jour 1",
-  "config.mining-on-day1.tooltip": "Si activé, l'éboulement bloquant l'entrée de la mine sera dégagé le 1er jour du Printemps, Année 1.",
-  "config.cc-on-day1.name": "Activer le Centre Communautaire le jour 1",
-  "config.cc-on-day1.tooltip": "Si activé, la cinématique du Centre Communautaire se déclenchera le 1er jour du Printemps, Année 1 (nécessite d'entrer à Pélican Ville)."
+  "config.fishOnDay1.name": "Pêche dès le jour 1",
+  "config.fishOnDay1.tooltip": "Activez pour recevoir la lettre et l’événement de Willy qui vous donne une canne à pêche à la plage.",
+  "config.mining-on-day1.name": "Activer l’accès à la mine au jour 1",
+  "config.mining-on-day1.tooltip": "Si activé, l’éboulement bloquant l’entrée de la mine sera dégagé le 1er jour du printemps, année 1.",
+  "config.cc-on-day1.name": "Activer le Centre communautaire au jour 1",
+  "config.cc-on-day1.tooltip": "Si activé, la cinématique du Centre communautaire se déclenchera le 1er jour du printemps, année 1 (nécessite d’entrer dans Pelican Town).",
+  "config.pet-on-day1.name": "Adoption d’un animal le premier jour",
+  "config.pet-on-day1.tooltip": "Démarre la scène d’adoption d’animal la première fois que vous sortez de la maison de ferme, sans autres conditions."
 }

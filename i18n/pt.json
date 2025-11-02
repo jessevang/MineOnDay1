@@ -1,9 +1,10 @@
 ﻿{
-  "config.fishOnDay1.name": "Pescar no Dia 1",
-  "config.fishOnDay1.tooltip": "Ative para disparar a carta e o evento do Willy que lhe dá uma vara de pescar na praia",
-
-  "config.mining-on-day1.name": "Habilitar Acesso à Mina no Dia 1",
-  "config.mining-on-day1.tooltip": "Se habilitado, o deslizamento que bloqueia a entrada da mina será removido no Dia 1 da Primavera, Ano 1.",
-  "config.cc-on-day1.name": "Habilitar Centro Comunitário no Dia 1",
-  "config.cc-on-day1.tooltip": "Se habilitado, a cena do Centro Comunitário será acionada no Dia 1 da Primavera, Ano 1 (requer entrar na Vila Pelicanos)."
+  "config.fishOnDay1.name": "Pesca no Dia 1",
+  "config.fishOnDay1.tooltip": "Ative para receber a carta e o evento do Willy que lhe dá uma vara de pescar na praia.",
+  "config.mining-on-day1.name": "Ativar acesso à mina no Dia 1",
+  "config.mining-on-day1.tooltip": "Se ativado, o deslizamento de terra que bloqueia a entrada da mina será removido em 1º de Primavera, Ano 1.",
+  "config.cc-on-day1.name": "Ativar Centro Comunitário no Dia 1",
+  "config.cc-on-day1.tooltip": "Se ativado, a cena do Centro Comunitário será iniciada em 1º de Primavera, Ano 1 (necessário entrar na Vila Pelicano).",
+  "config.pet-on-day1.name": "Adoção de animal no primeiro dia",
+  "config.pet-on-day1.tooltip": "Inicia a cena de adoção de animal de estimação na primeira vez que sair da casa da fazenda, sem outros requisitos."
 }
