@@ -68,7 +68,7 @@ namespace MineOnDay1
 
             if (e.NewLocation.Name == "Town" && e.OldLocation.Name == "BusStop")
             {
-                if (Game1.dayOfMonth == 1 && Game1.isRaining == false)
+                if (Game1.dayOfMonth <= 5)
                 {
                     TryStartCommunityCenterEvent();
                 }
